@@ -7803,7 +7803,7 @@ s32 wl_cfg80211_attach_post(struct net_device *ndev)
 				wl->wdev->wiphy->interface_modes |=
 					(BIT(NL80211_IFTYPE_P2P_CLIENT)|
 					BIT(NL80211_IFTYPE_P2P_GO));
-
+#endif
 				if ((err = wl_cfgp2p_init_priv(wl)) != 0)
 					goto fail;
 

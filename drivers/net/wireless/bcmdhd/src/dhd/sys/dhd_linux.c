@@ -146,7 +146,7 @@ MODULE_LICENSE("GPL v2");
 #ifndef PROP_TXSTATUS
 #define DBUS_RX_BUFFER_SIZE_DHD(net)	(net->mtu + net->hard_header_len + dhd->pub.hdrlen)
 #else
-#define DBUS_RX_BUFFER_SIZE_DHD(net)	(net->mtu + net->hard_Wheader_len + dhd->pub.hdrlen + 128)
+#define DBUS_RX_BUFFER_SIZE_DHD(net)	(net->mtu + net->hard_header_len + dhd->pub.hdrlen + 128)
 #endif
 #endif /* BCM_FD_AGGR */
 
